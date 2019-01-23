@@ -1,1 +1,87 @@
-*,*::before,*::after{margin:0;padding:0;box-sizing:inherit}html{box-sizing:border-box;font-size:62.5%}@media only screen and (max-width: 75em){html{font-size:50%}}body{font-family:"Nunito", sans-serif;color:#6D5D4B;font-weight:300;line-height:1.6}.header{width:100vw;height:80vh}*,*::before,*::after{margin:0;padding:0;box-sizing:inherit}html{box-sizing:border-box;font-size:62.5%}@media only screen and (max-width: 75em){html{font-size:50%}}body{font-family:"Nunito", sans-serif;color:#6D5D4B;font-weight:300;line-height:1.6}.section-about{width:100vw;height:10vh}.section-departments{background-color:red}.section-departments .scroll-slider{height:100vh;display:block;overflow:hidden}.section-departments .scroll-wrapper{height:100%;position:relative;display:flex;flex-wrap:nowrap}.section-departments .item{display:flex;align-items:center;justify-content:center}.section-departments .item_img{width:100%}.section-departments .scroll-slide{height:100%;flex-basis:75vw;flex-grow:1;flex-shrink:0;margin-left:12rem}.footer{width:100vw;height:90vh}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.header {
+  width: 100vw;
+  height: 80vh; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.section-about {
+  width: 90vw;
+  height: 10vh; }
+
+.section-departments {
+  background: red; }
+  .section-departments .scroll-slider {
+    position: relative;
+    height: 100vh;
+    display: block;
+    overflow: hidden; }
+  .section-departments .scroll-wrapper {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent; }
+  .section-departments .scroll-slide {
+    position: relative;
+    height: 100%;
+    flex-basis: 75vw;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 12rem; }
+  .section-departments .item {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-departments .item_img {
+      position: relative;
+      width: 100%; }
+
+.footer {
+  width: 100vw;
+  height: 90vh; }

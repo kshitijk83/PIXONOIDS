@@ -1,7 +1,8 @@
 .section-departments{
-    background-color: red;
+    background: red;
 
     .scroll-slider{
+        position: relative;
         height: 100vh;
         display: block;
         overflow: hidden;
@@ -13,6 +14,24 @@
         position: relative;
         display: flex;
         flex-wrap: nowrap;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .scroll-slide{
+        position: relative;
+        height: 100%;
+        flex-basis: 75vw;
+        flex-grow: 1;
+        flex-shrink: 0;
+        margin-left: 12rem;
     }
 
     .item{
@@ -20,16 +39,10 @@
         align-items: center;
         justify-content: center;
         &_img{
+            position: relative;
             width: 100%;
         }
     }
 
-    .scroll-slide{
-        height: 100%;
-        flex-basis: 75vw;
-        flex-grow: 1;
-        flex-shrink: 0;
-        margin-left: 12rem;
-    }
 
 }
