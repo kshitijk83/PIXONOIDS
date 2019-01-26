@@ -1,4 +1,92 @@
 .header{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
+}
+
+.slideShow{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    
+
+    &_main{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        .homeSlide{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        &-top{
+            overflow: hidden;
+            position: absolute;
+            top: 3rem;
+            left: 3rem;
+            right: 3rem;
+            bottom: 3rem;
+            border: .1rem rgba(255,255,255,0.2) solid;
+            border-width: .1rem .1rem 0 .1rem;
+            height: 50%;
+
+            &-slide01{
+                background: url(../img/img_clouds-top.jpg) no-repeat bottom center;
+                background-size: cover;
+            }
+        
+            &-slide02{
+                background: url(../img/img_clouds-top2.jpg) no-repeat bottom center;
+                background-size: cover;
+            }
+            &-slide03{
+                background: url(../img/img_clouds-top3.jpg) no-repeat bottom center;
+                background-size: cover;
+            }
+        }
+
+        &-divider{
+            z-index: 3;
+            position: absolute;
+            top: 50%;
+            margin-top: -4rem;
+            left: -20rem;
+            right: -20rem;
+            height: 4rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(34, 34, 34, 0) 100%);
+        }
+
+        &-bottom{
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 3rem;
+            right: 3rem;
+            bottom: 3rem;
+            border: 1px rgba(255, 255, 255, 0.2) solid;
+            border-width: 0 .1rem .1rem .1rem;
+
+            &-slide01{
+                background: url(../img/img_clouds-bottom.jpg) no-repeat bottom center;
+                background-size: cover;
+            }
+        
+            &-slide02{
+                background: url(../img/img_clouds-bottom2.jpg) no-repeat bottom center;
+                background-size: cover;
+            }
+            &-slide03{
+                background: url(../img/img_clouds-bottom3.jpg) no-repeat bottom center;
+                background-size: cover;
+            }
+        }
+
+        
+    }
+
 }
