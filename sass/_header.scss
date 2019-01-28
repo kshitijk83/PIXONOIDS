@@ -89,4 +89,40 @@
         
     }
 
+    &_nav{
+        z-index: 5;
+        position: absolute;
+        right: 5rem;
+        top: 50%;
+        width: 5rem;
+        transform: translateY(-50%);
+
+        ul{
+            list-style: none;
+            color: #fff;
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+
+            li{
+                width: 5rem;
+                height: 5rem;
+                line-height: 5rem;
+                background-color: rgba(0,0,0,0.7);
+                margin-bottom: .1rem;
+
+                a{
+                    display: block;
+                    width: 5rem;
+                    height: 5rem;
+                    position: relative;
+                    overflow: hidden;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
 }
