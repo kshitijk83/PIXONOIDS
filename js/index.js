@@ -25,7 +25,7 @@ var slider = $('.scroll-slider'),
         // Set dimensions
         // setDimensions();
         
-        // On resize        
+        // On resize
         window.requestAnimationFrame(setDimensions);
       
     }
