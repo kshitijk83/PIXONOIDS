@@ -78,8 +78,8 @@
 		var yPos = event.clientY/$(window).height()-.5;
 
 		TweenLite.to('.slideShow', .6, {
-			rotationX: 1*yPos,
-			rotationY:1*xPos,
+			rotationX: 5*yPos,
+			rotationY:5*xPos,
 			ease: Power1.easeOut,
 			transformPerspective: 900,
 			// transformOrigin: "center"
