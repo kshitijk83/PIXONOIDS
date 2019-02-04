@@ -31,16 +31,17 @@
         flex-basis: 75vw;
         flex-grow: 1;
         flex-shrink: 0;
-        margin-left: 12rem;
+        // margin-left: 12rem;
     }
 
     .item{
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 12rem;
         &_img{
             position: relative;
-            width: 100%;
+            width: 70%;
         }
     }
 

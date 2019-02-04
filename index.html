@@ -12,37 +12,21 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <header class ="header">
-            <div class="slideShow">
-                <div class="slideShow_main">
-                    <div class="slideShow_main-top">
-                        <div class="homeSlide slideShow_main-top-slide01 active"></div>
-                        <div class="homeSlide slideShow_main-top-slide02"></div>
-                        <div class="homeSlide slideShow_main-top-slide03"></div>
-                    </div>
-                    <div class="slideShow_main-bottom">
-                        <div class="homeSlide slideShow_main-bottom-slide01 active"></div>
-                        <div class="homeSlide slideShow_main-bottom-slide02"></div>
-                        <div class="homeSlide slideShow_main-bottom-slide03"></div>
-                    </div>
-                    <div class="slideShow_main-divider">
 
-                    </div>
+        <header class="header">
+            <div id="divBody0" class="pixoHeader divActive">
+                <div class="pixoHeader-pixoIs">
+                        Pixonoids is&nbsp;
+                        <span class="pixoHeader-tagline">Passion</span>
+                        <img class="pixoHeader-pixoGif" src="img/logoSmall.gif"/>	
                 </div>
-                <div class="slideShow_nav">
-                    <ul>
-                        <li class="slideShow_nav-prev">
-                            <a href="#" title="Go to previuos slide">
-                                <span class="ico ico-up">↓</span>
-                            </a>
-                        </li>
-                        <li class="slideShow_nav-next">
-                            <a href="#" title="Go to previuos slide">
-                                <span class="ico ico-down">↑</span>
-                            </a>
-                        </li>
-                    </ul>
+                <div id="divLogo">
+          
                 </div>
+                <div id="background" class="mouse-bg"><img id="bgimg1" src="img/production.png"/></div>
+                <div id="foreground" class="mouse-bg"><img src="img/webdesigning.png"/></div>
+                <div id="fore-foreground" class="mouse-bg"><img src="img/graphics.png"/></div>
+                <div id="fore-fore-foreground" class="mouse-bg"><img src="img/animation.png"/></div>
             </div>
         </header>
 
@@ -81,7 +65,52 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/animation.gsap.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TimelineLite.min.js"></script>
+        <script src="./js/utilities/pixols.js" async defer></script>
+        <script src="./js/utilities/mouseParallax.js" async defer></script>
         <script src="./js/index.js" async defer></script>
         <script src="./js/slideShow.js" async defer></script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+<!-- <header class ="header">
+    <div class="slideShow">
+        <div class="slideShow_main">
+            <div class="slideShow_main-top">
+                <div class="homeSlide slideShow_main-top-slide01 active"></div>
+                <div class="homeSlide slideShow_main-top-slide02"></div>
+                <div class="homeSlide slideShow_main-top-slide03"></div>
+            </div>
+            <div class="slideShow_main-bottom">
+                <div class="homeSlide slideShow_main-bottom-slide01 active"></div>
+                <div class="homeSlide slideShow_main-bottom-slide02"></div>
+                <div class="homeSlide slideShow_main-bottom-slide03"></div>
+            </div>
+            <div class="slideShow_main-divider">
+
+            </div>
+        </div>
+        <div class="slideShow_nav">
+            <ul>
+                <li class="slideShow_nav-prev">
+                    <a href="#" title="Go to previuos slide">
+                        <span class="ico ico-up">↓</span>
+                    </a>
+                </li>
+                <li class="slideShow_nav-next">
+                    <a href="#" title="Go to previuos slide">
+                        <span class="ico ico-down">↑</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header> -->
