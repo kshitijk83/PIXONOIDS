@@ -27,7 +27,7 @@ var slider = $('.scroll-slider'),
         
         // On resize
         window.requestAnimationFrame(setDimensions);
-      
+    
     }
 
     function setDimensions() {
@@ -54,7 +54,7 @@ var slider = $('.scroll-slider'),
 
     function setScene() {
 
-      var xDist = -slides.width() * ( slides.length - 1 ),
+      var xDist = -slides.width() * ( slides.length -1 ),
           tlParams = { x: xDist, ease: Power2.easeInOut };
               
       if (scrollScene != null && scrollTimeline != null) {
@@ -97,5 +97,13 @@ var slider = $('.scroll-slider'),
     }
     
   $(document).ready(function() {
-    scrollSlider(); 
+    
+    $('#background').mouseParallax({ moveFactor: 10 });
+    $('#foreground').mouseParallax({ moveFactor: 10 });
+    $('#fore-foreground').mouseParallax({ moveFactor: 10 });
+    $('#fore-fore-foreground').mouseParallax({ moveFactor: 10 });
+
+    scrollSlider();
+
+
   });
