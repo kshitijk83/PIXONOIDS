@@ -6,11 +6,16 @@
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
       font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -22,95 +27,99 @@ body {
   width: 100%;
   height: 100vh; }
 
-.slideShow {
+.pixoHeader {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: white;
   position: absolute;
-  top: 0;
-  left: 0;
+  -webkit-perspective: 50rem;
+  -moz-perspective: 50rem;
+  perspective: 50rem;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  background-color: #8B4789; }
+  .pixoHeader-pixoIs {
+    font-weight: 100;
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    position: absolute;
+    bottom: 17%;
+    color: white; }
+  .pixoHeader-tagline {
+    border-right: 1px solid white;
+    font-weight: bold;
+    padding-right: 2px; }
+  .pixoHeader-pixoGif {
+    width: 27%;
+    position: absolute;
+    left: 37.5%;
+    top: -1000%;
+    border: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 1000;
+    background-size: 100% 100%;
+    animation: 2.5s rotate infinite linear; }
+    @media only screen and (max-width: 37.5em) {
+      .pixoHeader-pixoGif {
+        top: -620%;
+        left: 41.5%; } }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%; }
+  100% {
+    transform: rotate(360deg); } }
+  .pixoHeader #background img {
+    position: absolute;
+    top: 20%;
+    left: 15%; }
+    @media only screen and (max-width: 37.5em) {
+      .pixoHeader #background img {
+        width: 10rem; } }
+  .pixoHeader #foreground img {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    transform: rotate(0deg); }
+    @media only screen and (max-width: 37.5em) {
+      .pixoHeader #foreground img {
+        width: 10rem; } }
+  .pixoHeader #fore-foreground img {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    transform: rotate(0deg); }
+    @media only screen and (max-width: 37.5em) {
+      .pixoHeader #fore-foreground img {
+        width: 10rem; } }
+  .pixoHeader #fore-fore-foreground img {
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    transform: rotate(0deg); }
+    @media only screen and (max-width: 37.5em) {
+      .pixoHeader #fore-fore-foreground img {
+        width: 10rem; } }
+
+.mouse-bg {
+  left: -4rem;
   right: 0;
   bottom: 0;
-  overflow: hidden; }
-  .slideShow_main {
-    position: absolute;
-    height: 100%;
-    width: 100%; }
-    .slideShow_main .homeSlide {
-      position: absolute;
-      width: 100%;
-      height: 100%; }
-    .slideShow_main-top {
-      overflow: hidden;
-      position: absolute;
-      top: 3rem;
-      left: 3rem;
-      right: 3rem;
-      bottom: 3rem;
-      border: 0.1rem rgba(255, 255, 255, 0.2) solid;
-      border-width: .1rem .1rem 0 .1rem;
-      height: 50%; }
-      .slideShow_main-top-slide01 {
-        background: url(../img/img_clouds-top.jpg) no-repeat bottom center;
-        background-size: cover; }
-      .slideShow_main-top-slide02 {
-        background: url(../img/img_clouds-top2.jpg) no-repeat bottom center;
-        background-size: cover; }
-      .slideShow_main-top-slide03 {
-        background: url(../img/img_clouds-top3.jpg) no-repeat bottom center;
-        background-size: cover; }
-    .slideShow_main-divider {
-      z-index: 3;
-      position: absolute;
-      top: 50%;
-      margin-top: -4rem;
-      left: 1rem;
-      right: 1rem;
-      height: 4rem;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(34, 34, 34, 0) 100%); }
-    .slideShow_main-bottom {
-      overflow: hidden;
-      position: absolute;
-      top: 50%;
-      left: 3rem;
-      right: 3rem;
-      bottom: 3rem;
-      border: 1px rgba(255, 255, 255, 0.2) solid;
-      border-width: 0 .1rem .1rem .1rem; }
-      .slideShow_main-bottom-slide01 {
-        background: url(../img/img_clouds-bottom.jpg) no-repeat bottom center;
-        background-size: cover; }
-      .slideShow_main-bottom-slide02 {
-        background: url(../img/img_clouds-bottom2.jpg) no-repeat bottom center;
-        background-size: cover; }
-      .slideShow_main-bottom-slide03 {
-        background: url(../img/img_clouds-bottom3.jpg) no-repeat bottom center;
-        background-size: cover; }
-  .slideShow_nav {
-    z-index: 5;
-    position: absolute;
-    right: 5rem;
-    top: 50%;
-    width: 5rem;
-    transform: translateY(-50%); }
-    .slideShow_nav ul {
-      list-style: none;
-      color: #fff;
-      font-size: 1.3rem;
-      text-align: center;
-      margin: 0;
-      padding: 0; }
-      .slideShow_nav ul li {
-        width: 5rem;
-        height: 5rem;
-        line-height: 5rem;
-        background-color: rgba(0, 0, 0, 0.7);
-        margin-bottom: .1rem; }
-        .slideShow_nav ul li a {
-          display: block;
-          width: 5rem;
-          height: 5rem;
-          position: relative;
-          overflow: hidden;
-          text-decoration: none;
-          color: #fff; }
+  top: 0;
+  position: fixed; }
+  @media only screen and (max-width: 37.5em) {
+    .mouse-bg {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      position: absolute; } }
 
 *,
 *::before,
@@ -120,11 +129,16 @@ body {
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
       font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -133,8 +147,56 @@ body {
   line-height: 1.6; }
 
 .section-about {
-  width: 90vw;
-  height: 100vh; }
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  perspective: 10000px;
+  background-color: silver; }
+  .section-about .info {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    font-size: 2rem; }
+    .section-about .info_header {
+      font-size: 3rem; }
+  .section-about .right {
+    margin: auto; }
+  .section-about .spinner {
+    width: 50vmin;
+    height: 50vmin;
+    position: relative;
+    animation: wobble calc(1.5s * 2) ease-in-out infinite;
+    transform-style: preserve-3d; }
+
+@keyframes wobble {
+  0%, 100% {
+    transform: rotateX(15deg) rotateY(60deg); }
+  50% {
+    transform: rotateX(60deg) rotateY(-60deg) rotate(180deg); } }
+  .section-about .spinner::before,
+  .section-about .spinner::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: inherit;
+    height: inherit;
+    border: 12.5vmin solid;
+    border-radius: 50%;
+    animation: spin 1.5s ease-in-out infinite reverse; }
+  .section-about .spinner::after {
+    border-color: white;
+    animation-delay: calc(1.5s / 2 * -1);
+    background: url("../img/pixoLogo.png");
+    background-size: cover;
+    background-position: center; }
+
+@keyframes spin {
+  0%, 100% {
+    transform: translateZ(10vmin) rotateX(25deg); }
+  33% {
+    transform: translateZ(-10vmin) scale(0.4); }
+  66% {
+    transform: translateZ(-10vmin); } }
 
 .section-departments {
   background: grey; }
