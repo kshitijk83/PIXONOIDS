@@ -241,112 +241,92 @@ body {
   padding: 0px;
   font-family: sans-serif;
   box-sizing: border-box;
-  height: 550px;
+  height: 54rem;
   width: 100%;
   background-color: #000000;
   padding-top: 30px; }
-
-.line1, .line2, .center_logo {
-  display: inline-block; }
-
-.line1, .line2 {
-  letter-spacing: -0.1em;
-  font-size: 10px; }
-
-.center_logo {
-  margin: 30px 100px 0px 100px;
-  font-family: sans-serif;
-  font-size: 40px;
-  letter-spacing: 1px; }
-
-.fab {
-  font-size: 40px;
-  margin: 0px 22px;
-  color: #9e2e4e; }
-
-.fab:hover {
-  color: white; }
-
-.sections p:hover {
-  color: white;
-  cursor: pointer;
-  transform: rotateY(180deg) 5s ease-in 0s; }
-
-.left, .links, .right {
-  display: inline-block;
-  font-size: 30px;
-  font-family: sans-serif;
-  letter-spacing: .2em;
-  word-spacing: .2em;
-  line-height: 70px; }
-
-.left {
-  position: relative;
-  right: 150px;
-  top: 50px;
-  text-align: center; }
-
-.right {
-  position: relative;
-  top: 50px;
-  left: 200px;
-  text-align: center; }
-
-.links {
-  position: relative;
-  top: 30px;
-  left: 27px; }
-
-.line {
-  display: block;
-  position: relative;
-  top: 90px; }
-
-.line p {
-  letter-spacing: -0.1em;
-  transform: rotate(90deg);
-  font-size: 15px; }
-
-.move1 {
-  position: relative;
-  left: 100px;
-  top: 60px; }
-
-.move2 {
-  position: relative;
-  top: 60px;
-  right: 100px; }
-
-.last_line {
-  font-size: 15px;
-  position: relative;
-  top: 150px;
-  cursor: pointer; }
-
-.behind {
-  position: relative;
-  background-color: #9e2e4e;
-  height: 4px;
-  opacity: 0; }
-
-.about_anime:hover .behind {
-  transition: opacity 200ms ease-in 0s;
-  opacity: 1; }
-
-.behind1 {
-  bottom: 10px;
-  width: 140px; }
-
-.behind2 {
-  top: 50px;
-  left: 118px;
-  width: 110px; }
-
-.behind3 {
-  bottom: 10px;
-  left: 45px;
-  width: 100px; }
-
-.behind4 {
-  top: 50px;
-  right: 100px; }
+  .footer .line1, .footer .line2, .footer .center_logo {
+    display: inline-block; }
+  .footer .line1, .footer .line2 {
+    letter-spacing: -0.1em;
+    font-size: 1rem; }
+  .footer .center_logo {
+    margin: 3rem 10rem 0 10rem;
+    font-family: sans-serif;
+    font-size: 4rem;
+    letter-spacing: .1rem; }
+  .footer .fab {
+    font-size: 4rem;
+    margin: 0 2.2rem;
+    color: #9e2e4e; }
+  .footer .fab:hover {
+    color: white; }
+  .footer .sections p:hover {
+    color: white;
+    cursor: pointer;
+    transform: rotateY(180deg) 5s ease-in 0s; }
+  .footer .left, .footer .links, .footer .right {
+    display: inline-block;
+    font-size: 3rem;
+    font-family: sans-serif;
+    letter-spacing: .2em;
+    word-spacing: .2em;
+    line-height: 7rem; }
+  .footer .left {
+    position: relative;
+    right: 15rem;
+    top: 5rem;
+    text-align: center; }
+  .footer .right {
+    position: relative;
+    top: 5rem;
+    left: 20rem;
+    text-align: center; }
+  .footer .links {
+    position: relative;
+    top: 3rem;
+    left: 2.7rem; }
+  .footer .line {
+    display: block;
+    position: relative;
+    top: 9rem; }
+  .footer .line p {
+    display: inline-block;
+    letter-spacing: -0.1em;
+    transform: rotate(90deg);
+    font-size: 1.5rem; }
+  .footer .move1 {
+    position: relative;
+    left: 10rem;
+    top: 6rem; }
+  .footer .move2 {
+    position: relative;
+    top: 6rem;
+    right: 10rem; }
+  .footer .last_line {
+    font-size: 1.5rem;
+    position: relative;
+    top: 15rem;
+    cursor: pointer; }
+  .footer .behind {
+    position: relative;
+    background-color: #9e2e4e;
+    height: .4rem;
+    opacity: 0; }
+  .footer .about_anime:hover .behind {
+    transition: opacity 200ms ease-in 0s;
+    opacity: 1; }
+  .footer .behind1 {
+    bottom: 10px;
+    width: 140px; }
+  .footer .behind2 {
+    top: 50px;
+    left: 118px;
+    width: 110px; }
+  .footer .behind3 {
+    bottom: 10px;
+    left: 45px;
+    width: 100px; }
+  .footer .behind4 {
+    top: 50px;
+    right: 100px; }
