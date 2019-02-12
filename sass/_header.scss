@@ -1,6 +1,7 @@
 .header{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .pixoHeader {
@@ -15,7 +16,10 @@
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     transition: all 1s;
-    background-color:#8B4789;
+    z-index: 10;
+    //background-color:#8B4789;
+    //background-color: transparent;
+    background-color:black;
 
     &-pixoIs{
         font-weight: 100;
@@ -25,6 +29,7 @@
         position: absolute;
         bottom: 17%;
         color: white;
+        z-index: 1000;
     }
 
     &-tagline{
@@ -45,6 +50,7 @@
         z-index: 1000;
         background-size: 100% 100%;
         animation:2.5s rotate infinite linear;
+        z-index: 1000;
 
         @include respond(phone){
             top: -620%;
@@ -108,6 +114,7 @@
     bottom: 0;
     top: 0;
     position: fixed;
+    z-index: 100000;
     @include respond(phone){
         left: 0;
         right: 0;
@@ -118,7 +125,16 @@
 }
 
 
-
+#particles-js {
+    position : absolute;
+    width:100%;
+    height:100%;
+    z-index:-10000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    //opacity: 0.48;
+}
 
 
 
