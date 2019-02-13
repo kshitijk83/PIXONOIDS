@@ -71,9 +71,7 @@ var slider = $('.scroll-slider'),
         
       } else {
           // Init ScrollMagic controller
-          scrollController = new ScrollMagic.Controller({
-              addIndicators: true
-          });
+          scrollController = new ScrollMagic.Controller();
 
           //Create Tween
           scrollTimeline = new TimelineMax();

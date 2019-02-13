@@ -22,7 +22,6 @@ $(document).ready(function(){
             triggerElement: this
         })
         .setTween(animateIn)
-        .addIndicators()
         .addTo(controller);
         })
 
