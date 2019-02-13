@@ -344,7 +344,7 @@ body {
         display: flex;
         align-items: flex-start;
         grid-row: 3/5 !important;
-        height: 55% !important; }
+        height: 83% !important; }
         .section-departments .project-info h4 {
           font-size: 3.5rem;
           text-align: left; } }
@@ -487,97 +487,74 @@ body {
     object-fit: cover;
     display: block; }
 
-.footer {
-  margin: 0px;
-  padding: 0px;
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  color: #6d5d4b; }
+
+footer {
   font-family: sans-serif;
   box-sizing: border-box;
-  height: 54rem;
+  height: 100%;
   width: 100%;
   background-color: #000000;
-  padding-top: 30px; }
-  .footer .line1, .footer .line2, .footer .center_logo {
-    display: inline-block; }
-  .footer .line1, .footer .line2 {
-    letter-spacing: -0.1em;
-    font-size: 1rem; }
-  .footer .center_logo {
-    margin: 3rem 10rem 0 10rem;
+  padding-top: 1.2rem;
+  font-color: #2c2513; }
+  footer .heading {
+    display: block; }
+  footer .line1, footer .line2 {
+    letter-spacing: -0.08em;
+    font-size: 0.8rem; }
+  footer .center_logo {
     font-family: sans-serif;
-    font-size: 4rem;
-    letter-spacing: .1rem; }
-  .footer .fab {
-    font-size: 4rem;
-    margin: 0 2.2rem;
-    color: #9e2e4e; }
-  .footer .fab:hover {
-    color: white; }
-  .footer .sections p:hover {
-    color: white;
-    cursor: pointer;
-    transform: rotateY(180deg) 5s ease-in 0s; }
-  .footer .left, .footer .links, .footer .right {
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+    padding: 0.6rem 0rem 0rem 0rem; }
+  footer .center_logo::after .center_logo::before {
+    content: '--------';
+    letter-spacing: 0.1rem;
+    display: inline;
+    color: #2c2513; }
+  footer .about_team, footer .home_contact {
+    display: flex;
+    justify-content: space-between; }
+  footer .about_team {
+    margin: 3.2rem 8rem 0rem; }
+  footer .home_contact {
+    margin: 3.2rem 8rem 0rem; }
+  footer .item {
+    display: inline;
+    font-size: 2em; }
+  footer .mid_line {
+    font-size: 1.6rem;
     display: inline-block;
-    font-size: 3rem;
-    font-family: sans-serif;
-    letter-spacing: .2em;
-    word-spacing: .2em;
-    line-height: 7rem; }
-  .footer .left {
-    position: relative;
-    right: 15rem;
-    top: 5rem;
-    text-align: center; }
-  .footer .right {
-    position: relative;
-    top: 5rem;
-    left: 20rem;
-    text-align: center; }
-  .footer .links {
-    position: relative;
-    top: 3rem;
-    left: 2.7rem; }
-  .footer .line {
-    display: block;
-    position: relative;
-    top: 9rem; }
-  .footer .line p {
-    display: inline-block;
+    letter-spacing: 0.3rem; }
+  footer .mid_line p {
     letter-spacing: -0.1em;
     transform: rotate(90deg);
-    font-size: 1.5rem; }
-  .footer .move1 {
-    position: relative;
-    left: 10rem;
-    top: 6rem; }
-  .footer .move2 {
-    position: relative;
-    top: 6rem;
-    right: 10rem; }
-  .footer .last_line {
-    font-size: 1.5rem;
-    position: relative;
-    top: 15rem;
-    cursor: pointer; }
-  .footer .behind {
-    position: relative;
-    background-color: #9e2e4e;
-    height: .4rem;
-    opacity: 0; }
-  .footer .about_anime:hover .behind {
-    transition: opacity 200ms ease-in 0s;
-    opacity: 1; }
-  .footer .behind1 {
-    bottom: 10px;
-    width: 140px; }
-  .footer .behind2 {
-    top: 50px;
-    left: 118px;
-    width: 110px; }
-  .footer .behind3 {
-    bottom: 10px;
-    left: 45px;
-    width: 100px; }
-  .footer .behind4 {
-    top: 50px;
-    right: 100px; }
+    margin: 3rem 0rem 0rem 9rem; }
+  footer .fab {
+    font-size: 2.3rem;
+    opacity: 1;
+    margin: 2rem 2rem;
+    color: #882743; }
+  footer .fab:hover {
+    color: white; }
+  footer .last_line {
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin: 2.5rem 0rem 0rem 0rem; }
+  footer .last_line p:nth-child(1):before {
+    content: ' \00A9'; }
+  footer .home_contact {
+    justify-content: space-around; }
+
+@media (max-width: 768px) {
+  .about_team, .home_contact {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem auto 0rem; }
+  .item {
+    margin-bottom: 10px; } }
