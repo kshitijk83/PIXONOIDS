@@ -1,6 +1,39 @@
 .header{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+}
+
+.pixoHeader-pixoGif {
+    width: 32rem;
+    // position: absolute;
+    // left: 50%;
+    // top:50%;
+    // transform-origin: translate(-50%);
+    border: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 1000;
+    background-size: 100% 100%;
+    animation:2.5s rotate infinite linear;
+
+    @include respond(phone){
+        top: -620%;
+        left: 41.5%;
+    }
+    
+}
+
+.pixoGifContainer {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
 }
 
 .pixoHeader {
@@ -8,23 +41,24 @@
     width: 100%;
     height: 100%;
     background-color: white;
-    position: absolute;
+    position: relative;
     -webkit-perspective: 50rem;
     -moz-perspective: 50rem;
     perspective: 50rem;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     transition: all 1s;
-    background-color:#8B4789;
+    z-index: 10;
+    background-color:black;
 
     &-pixoIs{
         font-weight: 100;
         width: 100%;
         font-size: 3em;
         text-align: center;
-        position: absolute;
-        bottom: 17%;
         color: white;
+        z-index: 1000;
+        padding-top:5rem;
     }
 
     &-tagline{
@@ -32,29 +66,11 @@
         font-weight: bold;
         padding-right: 2px;
     }
-
-    &-pixoGif {
-        width:27%;
-        position: absolute;
-        left: 37.5%;
-        top:-1000%;
-        border: none;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-        z-index: 1000;
-        background-size: 100% 100%;
-        animation:2.5s rotate infinite linear;
-
-        @include respond(phone){
-            top: -620%;
-            left: 41.5%;
-        }
-        
-    }
     
     @keyframes rotate{
-        0%{transform:rotate(0deg); transform-origin:50% 50%;}
+        0%{
+            transform:rotate(0deg);
+        }
         100%{transform:rotate(360deg);}
 
     }
@@ -76,6 +92,7 @@
 
         @include respond(phone){
             width: 10rem;
+            top: 73%;
         }
     }
     #fore-foreground img{
@@ -96,6 +113,7 @@
 
         @include respond(phone){
             width: 10rem;
+            top: 73%;
         }
     }
 }
@@ -108,6 +126,7 @@
     bottom: 0;
     top: 0;
     position: fixed;
+    z-index: 100000;
     @include respond(phone){
         left: 0;
         right: 0;
@@ -118,7 +137,16 @@
 }
 
 
-
+#particles-js {
+    position : absolute;
+    width:100%;
+    height:100vh;
+    z-index:-10000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    //opacity: 0.48;
+}
 
 
 

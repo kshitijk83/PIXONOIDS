@@ -35,8 +35,8 @@ var slider = $('.scroll-slider'),
         settings.slideWidth = firstSlide.width();
         settings.slideHeight = firstSlide.height();
       
-        console.log(settings.slideWidth);
-        console.log(settings.slideHeight);
+        //console.log(settings.slideWidth);
+        //console.log(settings.slideHeight);
 
         // Calculate slider width and height
         settings.sliderWidth = Math.ceil((settings.slideWidth * slides.length));
@@ -71,9 +71,7 @@ var slider = $('.scroll-slider'),
         
       } else {
           // Init ScrollMagic controller
-          scrollController = new ScrollMagic.Controller({
-              addIndicators: true
-          });
+          scrollController = new ScrollMagic.Controller();
 
           //Create Tween
           scrollTimeline = new TimelineMax();
@@ -106,4 +104,9 @@ var slider = $('.scroll-slider'),
     scrollSlider();
 
 
+  });
+
+
+  particlesJS.load('particles-js', './particles.json', function() {
+    console.log('callback - particles.js config loaded');
   });

@@ -2,9 +2,14 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    // background-color: yellow;
-    perspective: 10000px;
-    background-color: silver;
+    perspective: 10000000px;
+    background: $color-backTemp-3;
+    color: $color-textTemp-2;
+
+    @include respond(tab-land) {
+        flex-direction: column-reverse;
+        height: auto;
+    }
 
     .info{
         width: 50%;
@@ -16,18 +21,35 @@
         &_header{
             font-size: 3rem;
         }
+
+        @include respond(tab-land){
+            padding: 6rem;
+            width: 80%;
+        }
+
+        @include respond(phone){
+            text-align: justify;
+        }
     }
     
     .right{
         margin: auto;
+        @include respond(tab-land){
+            padding: 6rem;
+        }
     }
 
     .spinner {
-        width: 50vmin;
-        height: 50vmin;
+        width: 40vmin;
+        height: 40vmin;
         position: relative;
         animation: wobble calc(1.5s * 2) ease-in-out infinite;
         transform-style: preserve-3d;
+
+        @include respond(tab-land) {
+            width: 20vmin;
+            height: 20vmin;
+        }
     }
     
     @keyframes wobble {
@@ -50,10 +72,16 @@
         border: 12.5vmin solid;
         border-radius: 50%;
         animation: spin 1.5s ease-in-out infinite reverse;
+
+        @include respond(tab-land){
+            border: 4.5vmin solid;
+        }
     }
     
     .spinner::after {
-        border-color: white;
+        border-color: transparent;
+        border: none;
+        background-repeat: no-repeat;
         animation-delay: calc(1.5s / 2 * -1);
         background: url("../img/pixoLogo.png");
         background-size: cover;

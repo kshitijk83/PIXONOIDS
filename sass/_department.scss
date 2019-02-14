@@ -1,49 +1,219 @@
 .section-departments{
-    background: grey;
+    background: $color-backTemp-2;
+    width: 100%;
+    color: $color-backTemp-3;
 
-    .scroll-slider{
-        position: relative;
-        height: 100vh;
-        display: block;
-        overflow: hidden;
-        
-    }
-
-    .scroll-wrapper{
-        height: 100%;
-        position: relative;
-        display: flex;
-        flex-wrap: nowrap;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        -ms-touch-action: pan-y;
-        touch-action: pan-y;
-        -webkit-tap-highlight-color: transparent;
+    h1{
+        font-weight: 600;
+        font-size: 48px;
+        color: #333;
+        margin: 0;
+        line-height: 1.3;
+        letter-spacing: .0001em;
     }
     
-    .scroll-slide{
-        position: relative;
-        height: 100%;
-        flex-basis: 75vw;
-        flex-grow: 1;
-        flex-shrink: 0;
-        // margin-left: 12rem;
+    h4{
+        font-weight: 600;
+        font-size: 28px;
+        color: $color-backTemp-3;
+        margin: 0;
+        line-height: 1.3;
+        letter-spacing: .0001em;
     }
-
-    .item{
-        display: flex;
-        align-items: center;
+    
+    a{
+        font-weight: 600;
+        color: #3f3f3f;
+        letter-spacing: .001em;
+    }
+    
+    p.top-titles{
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+    }
+    
+    .small-title{
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+    }
+    
+    .project-link{
+        text-decoration: none;
+        border-bottom: 2px solid #b08f24;
+        font-size: 1.5rem;
+    }
+    
+    section{
+        height: 90vh;
+        width: 100vw;
+    }
+    
+    .d-grid{
+        display: grid;
+        height: 100%;
         justify-content: center;
-        width: 12rem;
-        &_img{
-            position: relative;
-            width: 70%;
+        align-content: center;
+        text-align: center;
+    }
+    
+    .grid-12{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column: 1/span 12;
+        padding: 10rem 0 10rem 0;
+
+        @include respond(tab-land){
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(5, min-content);
+        }
+
+        @include respond(tab-port){
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(5, minmax(min-content, 1fr));
+        }
+
+        @include respond(phone){
+            grid-template-rows: repeat(5, min-content);
         }
     }
 
+    .project-info{
+        background: #fff;
+        padding: 2rem 2rem 3rem;
+        grid-row: 2/3;
+        grid-column: 2/5;
 
+        @include respond(tab-port){
+            grid-row: 3/5 !important;
+            grid-column: 1/-1 !important;
+            justify-self: center;
+            align-self: center;
+            width: 50%;
+            height: 20%;
+        }
+
+        @include respond(phone){
+            grid-column: 1/-1 !important;
+            width: 60%;
+            justify-self: center;
+            display: flex;
+            align-items: flex-start;
+            grid-row: 3/5 !important;
+            height: 83% !important;
+            h4{
+                font-size: 3.5rem;
+                text-align: left;
+            }
+        }
+    }
+    
+    .project-left .box{
+        grid-column: 3/span 5;
+        grid-row: 1/span 3;
+        width: 100%;
+    }
+    
+    .project-left .project-info {
+        grid-column: 2/span 3;
+        grid-row: 2/span 1;
+    }
+    
+    .project-right .box{
+        grid-column: 8/span 5;
+        grid-row: 1/span 3;
+        width: 100%;
+    }
+    
+    .project-right .project-info {
+        grid-column: 7/span 3;
+        grid-row: 2/span 1;
+    }
+    
+    img{
+        width: 80%;
+    }
+    
+    .project-description {
+        grid-column: 8/span 4;
+        grid-row: 1/span 3;
+        justify-self: left;
+        align-self: center;
+        font-size: 2rem;
+        text-align: right;
+        justify-self: center;
+        align-self: center;
+        font-size: 5rem;
+        text-align: right;
+        font-size: 2rem;
+
+        @include respond(tab-land){
+            font-size: 2rem;
+        }
+
+        @include respond(tab-port){
+            padding: 18rem;
+            font-size: 3rem;
+            grid-row: 4/6;
+            grid-column: 1/-1 !important;
+            text-align: justify;
+        }
+
+        @include respond(phone){
+            padding: 3.2rem;
+            font-size: 2rem;
+            grid-row: 5/6;
+
+        }
+
+        .project-description-detail  {
+            // font-size: 9rem;
+
+            @include respond(phone){
+                font-size: 3rem;
+            }
+        }
+    }
+    
+    .box{
+        position: relative;
+        overflow: hidden;
+        grid-row: 1/4;
+        grid-column: 3/8;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        @include respond(tab-port){
+            grid-row: 1/4 !important;
+            grid-column: 1/-1 !important;
+            justify-items: center !important;
+            align-items: center !important;
+        }
+    }
+    
+    .overlay{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: $color-backTemp-2;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+.left{
+    grid-column: 2/6 !important;
+    justify-self: right !important;
+    text-align: left !important;
+
+    @include respond(phone){
+        grid-column: 1/-1 !important;
+        text-align: justify !important;
+    }
 }

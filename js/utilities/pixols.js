@@ -9,14 +9,14 @@ function funcChangeSpan(){
 }
 
 function func1(){
-	span1.style.color="#8B4789";
+	span1.style.color="#000000";
 	span1.style.backgroundColor="white";
 	setTimeout(func2,500);
 }
 
 function func2(){
 	span1.innerHTML="";
-	span1.style.backgroundColor="#8B4789";
+	span1.style.backgroundColor="#000000";
 	span1.style.color="white";
 	setTimeout(func3,500);
 }
