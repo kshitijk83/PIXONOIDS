@@ -1,7 +1,7 @@
 .section-departments{
-    background: grey;
+    background: $color-backTemp-2;
     width: 100%;
-
+    color: $color-backTemp-3;
 
     h1{
         font-weight: 600;
@@ -15,7 +15,7 @@
     h4{
         font-weight: 600;
         font-size: 28px;
-        color: #666;
+        color: $color-backTemp-3;
         margin: 0;
         line-height: 1.3;
         letter-spacing: .0001em;
@@ -200,7 +200,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background: grey;
+        background: $color-backTemp-2;
         width: 100%;
         height: 100%;
     }

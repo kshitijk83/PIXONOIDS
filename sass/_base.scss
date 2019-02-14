@@ -1,7 +1,11 @@
 // COLOR VARIABLES
+@font-face {
+  font-family: Espoir;
+  src: url('../fonts/espoir_serif/Espoir_Serif.otf') format('otf'),
+    url('../fonts/espoir_serif/Espoir\ Serif.ttf') format('ttf');
+}
 $color-primary: #c69963;
 $color-primary-dark: #B28451;
-
 $color-secondary: #101d2c;
 
 $color-grey-light-1: #f9f7f6;
@@ -14,6 +18,17 @@ $color-grey-dark-2: #6D5D4B;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+// $color-textTemp-1: #E5BA77; // all left
+// $color-textTemp-2: #C98B2C; // gallery heading, about-text
+// $color-backTemp-1: #3D2A0D; // footerback, dark highlights
+// $color-backTemp-2: #8C611F; // depart-back
+// $color-backTemp-3: #9F7A42; // about-back
+
+$color-textTemp-1: #F7DE42; //same ad above
+$color-textTemp-2: #9A7B22;
+$color-backTemp-1: #410757;
+$color-backTemp-2: #6E4B8F;
+$color-backTemp-3: #AC35D9;
 
 *,
 *::before,
