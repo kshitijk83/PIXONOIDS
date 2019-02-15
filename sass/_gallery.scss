@@ -15,6 +15,7 @@
     padding: 1.5rem;
 
     &__item {
+        overflow: hidden;
         
         &--1 {
             grid-row: 1/span 2;
@@ -92,6 +93,13 @@
         height: 100%;
         object-fit: cover;
         display: block;
+        transition: all 2sec ease-in-out;
     }
 
+    &__img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    }
 }
+
+

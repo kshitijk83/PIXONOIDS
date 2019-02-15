@@ -16,26 +16,25 @@ footer {
 
 .heading {
 	display: block;
+	margin: 2rem 0rem 0rem 0rem;
+}
 
+.heading p {
+	display: inline;
 }
 
 .line1, .line2 {
-	letter-spacing: -0.08em;
-	font-size: 0.8rem;
+	letter-spacing: -0.1em;
+	font-size: 1rem;
+	margin: 0rem 8rem;
+	color: #882743;
 }
 
 .center_logo {
 	font-family: sans-serif;
-	font-size: 2.2rem;
+	font-size: 4rem;
 	letter-spacing: 0.2rem;
 	padding: 0.6rem 0rem 0rem 0rem;
-}
-
-.center_logo::after .center_logo::before {
-	content: '--------';
-	letter-spacing: 0.1rem;
-	display: inline;
-	color: #2c2513;
 }
 
 
@@ -45,36 +44,40 @@ footer {
 }
 
 .about_team {
-	margin: 3.2rem 8rem 0rem; 	
+	margin: 3.2rem 10rem;	
 }
 
 .home_contact {
-	margin: 3.2rem 8rem 0rem;
+	margin: 3.2rem 7rem;
+	padding: 2rem 0rem 0rem 0rem;
 }
 
 .item {
 	display: inline;
-	font-size: 2em;
-
+	font-size: 3em;
 }
 
- .mid_line {
+.item:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.mid_line {
 	font-size: 1.6rem;
 	display: inline-block;
-	letter-spacing: 0.3rem;
+	color: #882743;
 }
-
 
 .mid_line p {
 	letter-spacing: -0.1em;
 	transform: rotate(90deg);
-	margin: 3rem 0rem 0rem 9rem;
+	margin: 3rem 0rem 0rem 5rem;
 }
 
 .fab {
-	font-size: 2.3rem; 
+	font-size: 3.5rem; 
 	opacity: 1;
-	margin: 2rem 2rem;
+	margin: 0rem 2rem;
 	color: #882743;
 }
 
@@ -83,9 +86,9 @@ footer {
 }
 
 .last_line {
-	font-size: 0.8rem;
+	font-size: 1.2rem;
 	cursor: pointer;
-	margin: 2.5rem 0rem 0rem 0rem;
+	margin: 2rem 0rem 2rem 0rem;
 }
 
 .last_line p:nth-child(1):before {
@@ -108,108 +111,3 @@ footer {
 	}
 }
 
-/*.footer {
-	margin: 0px;
-	padding: 0px;
-	font-family: sans-serif;
-	box-sizing: border-box;
-	height: 100%;
-	width: 100%;
-	background-color: #000000;
-	padding-top: 1.2rem;
-    font-color: #2c2513;
-
-    .heading {
-        display: block;
-    
-     }
-    
-     .line1, .line2 {
-        letter-spacing: -0.08em;
-        font-size: 0.8rem;
-    }
-    
-     .center_logo {
-        font-family: sans-serif;
-        font-size: 2.2rem;
-        letter-spacing: 0.2rem;
-        padding: 0.6rem 0rem 0rem 0rem;
-    }
-    
-     .center_logo::after .center_logo::before {
-        content: '--------';
-        letter-spacing: 0.1rem;
-        display: inline;
-        color: #2c2513;
-    }
-    
-    
-     .about_team, .home_contact {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-     .about_team {
-        margin: 3.2rem 8rem 0rem; 	
-    }
-    
-     .home_contact {
-        margin: 3.2rem 8rem 0rem;
-    }
-    
-     .item {
-        display: inline;
-        font-size: 2em;
-    
-     }
-    
-      .mid_line {
-        font-size: 1.6rem;
-        display: inline-block;
-        letter-spacing: 0.3rem;
-    }
-    
-    
-     .mid_line p {
-        letter-spacing: -0.1em;
-        transform: rotate(90deg);
-        margin: 3rem 0rem 0rem 9rem;
-    }
-    
-     .fab {
-        font-size: 2.3rem; 
-        opacity: 1;
-        margin: 2rem 2rem;
-        color: #882743;
-    }
-    
-     .fab:hover {
-        color: white; 
-    }
-    
-     .last_line {
-        font-size: 0.8rem;
-        cursor: pointer;
-        margin: 2.5rem 0rem 0rem 0rem;
-    }
-    
-     .last_line p:nth-child(1):before {
-        content: ' \00A9';
-    }
-    
-     .home_contact{
-        justify-content: space-around;
-    }
-}
-
-@media(max-width:768px){
-	.about_team, .home_contact{
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		margin:1rem auto 0rem;
-	}
-	.item{
-		margin-bottom:10px;
-	}
-}*/
