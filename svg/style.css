@@ -1,0 +1,101 @@
+/*.leaf {
+	width: 200px;
+	height: 80px;
+	background: red;
+	border-radius: 0 100px 0 0;
+	transform: skew(-45deg,0);
+}*/
+
+svg
+{
+	background:;
+	position: absolute;
+	
+}
+
+
+#p1 {
+	animation:clr 4s linear infinite;
+	animation-delay: 0.5s;
+}
+
+#p2 {
+	animation:clr 4s linear infinite;
+	animation-delay: 1s;
+}
+
+#p3 {
+	animation:clr 4s linear infinite;
+	animation-delay: 1.5s;
+}
+
+#p4 {
+	animation:clr 4s linear infinite;
+	animation-delay: 2s;
+}
+
+#p5 {
+	animation:clr 4s linear infinite;
+	animation-delay: 2.5s;
+}
+
+#p6 {
+	animation:clr 4s linear infinite;
+	animation-delay: 3s;
+}
+
+#p7 {
+	animation:clr 4s linear infinite;
+	animation-delay: 3.5s;
+}
+
+#p8 {
+	animation:clr 4s linear infinite;
+	animation-delay: 4s;
+}
+
+
+.a:nth-child(1)
+{
+	transform: translate(298px,300px);
+}
+
+.a:nth-child(2)
+{
+	transform: translate(370px,290px) rotate(-45deg);
+}
+
+.a:nth-child(3)
+{
+	transform: translate(410px,232px) rotate(-90deg);
+}
+.a:nth-child(4)
+{
+	transform: translate(400px,160px) rotate(-135deg);
+}
+.a:nth-child(5)
+{
+	transform: translate(332px,106px) rotate(-180deg);
+}
+.a:nth-child(6)
+{
+	transform: translate(270px,126px) rotate(-225deg);
+}
+
+.a:nth-child(7)
+{
+	transform: translate(227px,185px) rotate(-270deg);
+}
+
+.a:nth-child(8)
+{
+	transform: translate(238px,259px) rotate(-315deg);
+}
+
+
+@keyframes clr{
+	0%{fill: #8b008b;}
+	33%{fill: #00ffff;}
+	66%{fill: #000000;}
+	100%{fill: #ffff00;}
+}
