@@ -2,11 +2,12 @@
     font-size: 8rem;
     font-weight: bold;
     text-align: center;
-    color: $color-textTemp-2;
+    color: $color-pink;
+    background-color: $color-skin;
 }
 
 .gallery {
-    background-color: $color-grey-light-1;
+    background-color: $color-skin;
     grid-column: 1/1;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -15,6 +16,7 @@
     padding: 1.5rem;
 
     &__item {
+        overflow: hidden;
         
         &--1 {
             grid-row: 1/span 2;
@@ -92,6 +94,13 @@
         height: 100%;
         object-fit: cover;
         display: block;
+        transition: all 2sec ease-in-out;
     }
 
+    &__img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    }
 }
+
+
