@@ -9,9 +9,9 @@ footer {
 	box-sizing: border-box;
 	height: 100%;
 	width: 100%;
-	background-color: #000000;
+	background-color: $color-dark-blue;
 	padding-top: 1.2rem;
-	font-color: #2c2513;
+	color: $color-skin;
 }
 
 .heading {
@@ -78,7 +78,7 @@ footer {
 	font-size: 4rem; 
 	opacity: 1;
 	margin: 0rem 2rem;
-	color: #882743;
+	color: $color-pink;
 }
 
 .fab:hover {

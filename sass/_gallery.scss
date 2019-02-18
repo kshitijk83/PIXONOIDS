@@ -2,11 +2,12 @@
     font-size: 8rem;
     font-weight: bold;
     text-align: center;
-    color: $color-textTemp-2;
+    color: $color-pink;
+    background-color: $color-skin;
 }
 
 .gallery {
-    background-color: $color-grey-light-1;
+    background-color: $color-skin;
     grid-column: 1/1;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
