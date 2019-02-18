@@ -4,7 +4,7 @@
     display: flex;
     perspective: 10000000px;
     background: $color-backTemp-3;
-    color: $color-textTemp-2;
+    color: $color-textTemp-1;
 
     @include respond(tab-land) {
         flex-direction: column-reverse;
