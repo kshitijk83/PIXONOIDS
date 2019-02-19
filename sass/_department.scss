@@ -1,7 +1,7 @@
 .section-departments{
-    background: $color-backTemp-2;
+    background: $color-purple;
     width: 100%;
-    color: $color-textTemp-1;
+    color: $color-skin;
 
     h1{
         font-weight: 600;
@@ -83,7 +83,7 @@
     }
 
     .project-info{
-        background: #fff;
+        background: $color-skin;
         padding: 2rem 2rem 3rem;
         grid-row: 2/3;
         grid-column: 2/5;
@@ -200,7 +200,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background: $color-backTemp-2;
+        background: $color-purple;
         width: 100%;
         height: 100%;
     }

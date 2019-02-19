@@ -85,7 +85,7 @@ body {
   -moz-transition: all 1s;
   transition: all 1s;
   z-index: 10;
-  background-color: black; }
+  background-color: #355c7d; }
   .pixoHeader-pixoIs {
     font-weight: 100;
     width: 100%;
@@ -199,8 +199,8 @@ body {
   height: 100vh;
   display: flex;
   perspective: 10000000px;
-  background: #AC35D9;
-  color: #F7DE42; }
+  background: #c06c84;
+  color: #f8b195; }
   @media only screen and (max-width: 75em) {
     .section-about {
       flex-direction: column-reverse;
@@ -272,9 +272,9 @@ body {
     transform: translateZ(-10vmin); } }
 
 .section-departments {
-  background: #6E4B8F;
+  background: #6c5b7b;
   width: 100%;
-  color: #F7DE42; }
+  color: #f8b195; }
   .section-departments h1 {
     font-weight: 600;
     font-size: 48px;
@@ -334,7 +334,7 @@ body {
       .section-departments .grid-12 {
         grid-template-rows: repeat(5, min-content); } }
   .section-departments .project-info {
-    background: #fff;
+    background: #f8b195;
     padding: 2rem 2rem 3rem;
     grid-row: 2/3;
     grid-column: 2/5; }
@@ -440,10 +440,11 @@ body {
   font-size: 8rem;
   font-weight: bold;
   text-align: center;
-  color: #9A7B22; }
+  color: #c06c84;
+  background-color: #f8b195; }
 
 .gallery {
-  background-color: #f9f7f6;
+  background-color: #f8b195;
   grid-column: 1/1;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -514,9 +515,9 @@ footer {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  background-color: #000000;
+  background-color: #355c7d;
   padding-top: 1.2rem;
-  font-color: #2c2513; }
+  color: #f8b195; }
 
 .heading {
   display: block;
@@ -570,7 +571,7 @@ footer {
   font-size: 4rem;
   opacity: 1;
   margin: 0rem 2rem;
-  color: #882743; }
+  color: #c06c84; }
 
 .fab:hover {
   color: white; }

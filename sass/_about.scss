@@ -3,8 +3,8 @@
     height: 100vh;
     display: flex;
     perspective: 10000000px;
-    background: $color-backTemp-3;
-    color: $color-textTemp-1;
+    background: $color-pink;
+    color: $color-skin;
 
     @include respond(tab-land) {
         flex-direction: column-reverse;

@@ -6,10 +6,6 @@
 
 .pixoHeader-pixoGif {
     width: 32rem;
-    // position: absolute;
-    // left: 50%;
-    // top:50%;
-    // transform-origin: translate(-50%);
     border: none;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -49,7 +45,7 @@
     -moz-transition: all 1s;
     transition: all 1s;
     z-index: 10;
-    background-color:black;
+    background-color: $color-dark-blue;
 
     &-pixoIs{
         font-weight: 100;
@@ -77,6 +73,8 @@
 
     #background img{
         position:absolute;
+        fill: $color-skin;
+        filter: saturate(3);
         top: 20%;
         left:15%;
         @include respond(phone){
@@ -86,6 +84,7 @@
     }
     #foreground img{
         position: absolute;
+        fill: $color-skin;
         top:55%;
         left:15%;
         transform: rotate(0deg);
@@ -96,6 +95,7 @@
         }
     }
     #fore-foreground img{
+        fill: $color-skin;
         position: absolute;
         top: 20%;
         left:75%;
@@ -106,6 +106,7 @@
         }
     }
     #fore-fore-foreground img{
+        fill: $color-skin;
         position: absolute;
         top:55%;
         left:75%;
